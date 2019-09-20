@@ -1,10 +1,9 @@
 //css for the footer | footer-links and paragraph
 
 footer{
-
     background-color: $footer-background;
     color:white;
-
+        
     display: flex;
     flex-direction: column;
 
@@ -14,9 +13,9 @@ footer{
     a{
         color: $links-blue;
     }
-
+   
     .footer-links{
-        width: 100%;
+        width: 100vw;
 
         display: flex;
         flex-direction: row;
@@ -25,6 +24,16 @@ footer{
         .link-white{
             text-decoration: none;
             color:white;
+        }
+
+        @media (min-width:404px){
+            flex-grow:0;
+            justify-content: center;
+
+            a{
+                padding:1.5rem;
+            }
+
         }
     
     }
