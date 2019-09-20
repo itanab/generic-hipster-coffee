@@ -1,0 +1,53 @@
+//css for the footer | footer-links and paragraph
+
+footer{
+    background-color: $footer-background;
+    color:white;
+        
+    display: flex;
+    flex-direction: column;
+
+    padding-top:3.5rem;
+    padding-bottom:3.5rem;
+
+    a{
+        color: $links-blue;
+    }
+   
+    .footer-links{
+        width: 100vw;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        .link-white{
+            text-decoration: none;
+            color:white;
+        }
+
+        @media (min-width:404px){
+            flex-grow:0;
+            justify-content: center;
+
+            a{
+                padding:1.5rem;
+            }
+
+        }
+    
+    }
+
+    .footer-text{
+        text-align: center;
+
+        padding-top:3.5rem;
+
+        h3{
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+       
+    }
+
+}
