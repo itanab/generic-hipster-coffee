@@ -1,0 +1,93 @@
+@import 'common/common';
+
+main{
+    
+    display: flex;
+    flex-direction: column;
+    
+    @media(min-width: 600px){
+        font-size: 19px;
+        padding: 0 15vw;
+    }
+    @media(min-width: 900px){
+        font-size: 24px;
+        
+    }
+    @media(min-width: 1200px){
+        font-size: 29px;
+    }
+    width: 100vw;
+
+    padding: $small-screen-padding;
+
+    h1, h2{
+        width: 60%;
+        font-weight: 400;
+        margin: 0.5rem;
+    }
+
+    h1{
+        line-height: 3rem;
+
+        @media(min-width: 600px){
+            line-height: 4rem;
+        }
+        @media(min-width: 900px){
+            line-height: 5rem;
+            
+        }
+        @media(min-width: 1200px){
+            line-height: 6rem;
+        }
+    }
+
+    h2{
+        line-height: 2rem;
+    }
+
+    .img-container{
+        justify-self: center;
+
+        width: 80vw;
+        margin: 0.5rem 0;
+
+        @media(min-width: 600px){
+            width: 70vw;
+        }
+        @media(min-width: 900px){
+            width: 60vw;
+        }
+        @media(min-width: 1200px){
+            width: 50vw;
+        }
+
+        img{
+            width: 100%;
+        }
+    }
+
+    @media(min-width:800px){
+        .details{
+            display: flex;
+            justify-content: flex-start;
+
+            .details-item{
+                padding-right: 2rem;
+
+                p{
+                    font-size: 0.9rem;
+                }
+            }
+
+
+        }
+    }
+    p{
+        margin: 0;
+    }
+
+    // .map{
+    //     // position: absolute
+    // }
+
+}
