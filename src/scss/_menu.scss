@@ -1,0 +1,81 @@
+main{
+    h1{
+        margin-left: 0rem;
+    }
+}
+
+.menu{
+    //background-color: yellow;
+
+    h2{
+        margin: 0rem;
+        margin-bottom: 0.5rem;
+    }
+
+}
+
+.menu-coffee{
+    //background-color: green;
+    padding-top:1rem;
+
+
+}
+.box{
+    //background-color: red;
+
+    display:flex;
+    justify-content: space-between;
+
+    p{
+        padding-bottom: 0.5rem;
+    }
+
+}
+
+.bottom{
+    @media (max-width:600px){
+        padding-top:1.4rem;
+    }
+}
+
+//width of the heading that is on its own
+
+.sub-section{
+    h2{
+        width: 100%;
+    }
+}
+
+//image at the end
+
+img{
+    width: 30px;
+    height: 30px;
+}
+
+//wrapping of the rows and columns as the size grows
+
+.row1, .row2, .row4{
+    @media (min-width:600px){
+        font-size: 16px;
+        display: flex;
+        justify-content:space-between;
+
+        h2{
+            width:100%;
+
+        }
+
+        .menu-coffee{
+            width: 40%;
+            
+        }
+    }
+}
+
+.row3{
+    width: 100%;
+    h2{
+        font-size: 24px;
+    }
+}
